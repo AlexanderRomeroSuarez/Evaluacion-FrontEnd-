@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Edad</th>
+    <th>Fecha Nacimiento</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of list">
+      <td>{{ emp.Nombre }}</td>
+      <td>{{ emp.Apellido }}</td>
+      <td>{{ emp.Edad }}</td>
+      <td>{{ emp.FechaNacimiento }}</td>
+    </tr>
+  </tbody>
+</table>

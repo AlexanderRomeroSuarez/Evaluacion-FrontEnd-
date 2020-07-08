@@ -1,0 +1,57 @@
+<h1 class="display-4">Registro de clientes</h1>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input
+    type="hidden"
+    name="id"
+    #id="ngModel"
+    [(ngModel)]="service.formData.id"
+  />
+  <div class="form-group">
+    <input
+      name="Nombre"
+      #fullName="ngModel"
+      [(ngModel)]="service.formData.Nombre"
+      class="form-control"
+      placeholder="Nombre"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <input
+      name="Apellido"
+      #position="ngModel"
+      [(ngModel)]="service.formData.Apellido"
+      class="form-control"
+      placeholder="Apellido"
+    />
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input
+        name="Edad"
+        #empCode="ngModel"
+        [(ngModel)]="service.formData.Edad"
+        class="form-control"
+        placeholder="Edad"
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <input
+        name="FechaNacimiento"
+        #mobile="ngModel"
+        [(ngModel)]="service.formData.FechaNacimiento"
+        class="form-control"
+        placeholder="FechaNacimiento"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <button
+      type="submit"
+      [disabled]="form.invalid"
+      class="btn btn-lg btn-block btn-info"
+    >
+      Grabar
+    </button>
+  </div>
+</form>
