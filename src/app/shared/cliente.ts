@@ -1,7 +1,7 @@
 export class Cliente {
-  id!: string;
+  id: string;
   Nombre: string;
   Apellido: string;
-  Edad!: string;
-  FechaNacimiento!: string;
+  Edad: string;
+  FechaNacimiento: string;
 }
