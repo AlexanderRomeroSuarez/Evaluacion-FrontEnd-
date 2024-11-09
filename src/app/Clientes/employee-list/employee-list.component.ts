@@ -8,12 +8,12 @@ import { Cliente } from 'src/app/shared/cliente';
   styleUrls: ['./employee-list.component.scss'],
 })
 export class EmployeeListComponent implements OnInit {
-  list: Cliente[];
+  lista: Cliente[];
   constructor(private service: ClienteService) {}
 
   ngOnInit() {
     this.service.getEmployees().subscribe((actionArray) => {
-      this.list = actionArray.map((item) => {
+      this.lista = actionArray.map((item) => {
         return {
           id: item.payload.doc.id,
           ...item.payload.doc.data(),
@@ -22,7 +22,7 @@ export class EmployeeListComponent implements OnInit {
     });
   }
 
-  onEdit(emp: Cliente) {
+  onEditar(emp: Cliente) {
     this.service.formData = Object.assign({}, emp);
   }
 }
