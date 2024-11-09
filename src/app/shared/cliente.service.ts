@@ -16,8 +16,4 @@ export class ClienteService {
     return this.firestore.collection('employeesId').snapshotChanges();
   }
 
-  getEmployeesss() {
-    return this.firestore.collection('employeId').snapshotChanges();
-
-  }
 }
