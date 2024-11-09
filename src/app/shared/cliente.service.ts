@@ -9,8 +9,11 @@ export class ClienteService {
 
   constructor(private firestore: AngularFirestore) {}
 
-  getEmployees() {
-    return this.firestore.collection('employeefusion').snapshotChanges();
+  getEmployes() {
+    return this.firestore.collection('employee-fusion').snapshotChanges();
+  }
+  getEmployeId() {
+    return this.firestore.collection('employeId').snapshotChanges();
   }
 
   getEmployeesss() {
