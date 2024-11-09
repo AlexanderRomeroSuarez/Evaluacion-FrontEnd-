@@ -4,5 +4,5 @@ export class Cliente {
   Apellido: string;
   Edad!: string;
   FechaNacimiento!: string;
-  Dni!: string;
+  Dni: string;
 }
