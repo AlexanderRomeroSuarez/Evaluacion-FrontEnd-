@@ -15,4 +15,8 @@ export class AppComponent {
   resta(a, b){
     return a - b ;
    }
+
+   division(a, b){
+    return a - b ;
+   }
 }
