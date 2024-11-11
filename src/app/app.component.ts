@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'ejemplo de FronEnd';
 
   suma(a, b){
-  return a -b ;
+   return a + b ;
   }
 }
