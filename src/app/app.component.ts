@@ -11,4 +11,8 @@ export class AppComponent {
   suma(a, b){
    return a + b ;
   }
+  
+  suma(a, b){
+    return a + b ;
+   }
 }
