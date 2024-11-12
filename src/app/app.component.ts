@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ejemplo de FronEnd';
+  title = 'ejemplo de operadores';
 
   suma(a, b){
    return a + b ;
