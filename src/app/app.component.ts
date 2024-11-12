@@ -18,9 +18,5 @@ export class AppComponent {
 
    division(a, b){
     return a / b ;
-   }
-
-   multiplicacion(a, b){
-    return a / b ;
-   }
+   
 }
