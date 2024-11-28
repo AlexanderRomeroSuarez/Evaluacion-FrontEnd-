@@ -36,6 +36,6 @@ export class ClienteComponent implements OnInit {
     if (form.value.id == null) this.firestore.collection('clientes-1').add(data);
     else this.firestore.doc('cliente/' + form.value.id).add(data);
     this.resetForm(form);
-    this.toastr.success('Se ha registrado correctamente un cliente');
+    this.toastr.success('Se ha registrado correctamente un cliente---------------------');
   }
 }
