@@ -21,7 +21,7 @@ export class ClienteService {
   }
 
   getShearchId(string: any) {
-    return this.firestore.collection('Id').snapshotChanges();
+    return this.firestore.collection('cod').snapshotChanges();
   }
 
 
