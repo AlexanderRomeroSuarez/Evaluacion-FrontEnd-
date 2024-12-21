@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ejemplo de operadores aritméticos en Angular';
+  title = 'ejemplo de operadores aritméticos en Angular de ejemlpos';
  iscode: boolean;
   suma(a, b){
    return a + b ;
