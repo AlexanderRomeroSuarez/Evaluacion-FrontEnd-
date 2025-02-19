@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './add-cliente.component.scss'
 })
 export class AddClienteComponent {
- constructor(){
-  
- }
+
 }

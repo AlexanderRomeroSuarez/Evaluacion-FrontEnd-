@@ -16,11 +16,11 @@ export class ClienteService {
     return this.firestore.collection('employeeId').snapshotChanges();
   }
 
-  getBusquedaId(string: any) {
+  getBusquedaId() {
     return this.firestore.collection('Id').snapshotChanges();
   }
 
-  getShearchId(string: any) {
+  getShearchId() {
     return this.firestore.collection('cod').snapshotChanges();
   }
 
