@@ -8,7 +8,6 @@
       "sourceType": "module"
     },
     "rules": {
-
-
+      "eqeqeq": ["error", "always"]
     }
   }

@@ -20,7 +20,7 @@ export class ClienteComponent implements OnInit {
   }
 
   resetForm(form?: NgForm) {
-    if (form != null) form.resetForm();
+    if (form !== null) form.resetForm();
     this.service.formData = {
       id: null,
       Nombre: '',
